@@ -10,4 +10,6 @@ class Anagram
     sorted = anagarams.collect {|anagram| anagram.split("").sort.join("")}
     sorted.each {|match| @result << match if match == @word}
     @result
+  end
+
 end
